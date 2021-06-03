@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合格证信息</title>
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 120vh;
+            background: #50ab6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .info_intro{
+            width: 94%;
+            height: 70%;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .info_real{
+            width: 94%;
+            height: 25%;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .info_intro .title, .info_real .title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 7%;
+            background: #50ab6b;
+            color:#fff;
+            font-size: 18px;
+            margin: 3%;
+            border-radius: 5px;
+        }
+        .info_real .title{
+            /* 是相对于父元素的大小,info_real的height为25% */
+            height: 18%;
+        }
+        .info_intro .content .item, .info_real .content .item{
+            border-bottom: 1px solid #eee;
+            padding: 3%;
+        }
+        .info_intro .content .item span, .info_real .content .item span{
+            color: #666;
+            margin-right: 3%;
+        }
+        .info_intro .content .item em, .info_real .content .item em{
+            font-style: normal;
+        }
+        .info_intro .commitment{
+            border-bottom: 1px solid #eee;
+        }
+        .info_intro .commitment .item{
+            padding: 1%;
+            font-size: 12px;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="info_intro">
+            <div class="title">
+                <div>食用农产品合格证</div>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <span>食用农产品名称: </span>
+                    <em>鸡蛋</em>
+                </div>
+                <div class="item">
+                    <span>重量: </span>
+                    <em>20.0 公斤</em>
+                </div>
+                <div class="item">
+                    <span>生产者: </span>
+                    <em>孙立忠</em>
+                </div>
+                <div class="item">
+                    <span>联系方式: </span>
+                    <em>19963536717</em>
+                </div>
+                <div class="item">
+                    <span>产地: </span>
+                    <em>山东省聊城市冠县</em>
+                </div>
+                <div class="item">
+                    <span>合格方式: </span>
+                    <em>自我承诺合格</em>
+                </div>
+            </div>
+            <div class="commitment">
+                <div class="item">我承诺对产品质量安全以及合格证真实性负责: </div>
+                <div class="item">
+                    <input type="checkbox" checked>
+                    <span>不使用禁限用农药兽药</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" checked>
+                    <span>不使用非法添加物</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" checked>
+                    <span>遵守农药隔夜期限、兽药休药期规定</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" checked>
+                    <span>销售的食用农产品符合农药兽药残留食品安全国家标准</span>
+                </div>
+            </div>
+        </div>
+        <div class="info_real">
+            <div class="title">
+                <div>实名信息</div>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <span>姓名: </span>
+                    <em>孙立忠</em>
+                </div>
+                <div class="item">
+                    <span>身份证号: </span>
+                    <em>3725********0737</em>
+                </div>
+                <div class="item">
+                    <span>住址: </span>
+                    <em>山东省冠县冠城镇唐寺村</em>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
